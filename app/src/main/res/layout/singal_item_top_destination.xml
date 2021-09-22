@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="159dp"
+    android:layout_height="225dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="132dp"
+        android:layout_height="225dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        app:cardCornerRadius="20dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/cityPhoto"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/overlay_1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gothamrounded_bold"
+            android:text="Lahore"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="170dp"
+            android:id="@+id/cityName"/>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_language_24px"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="17dp"
+        android:id="@+id/imageViewRS"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Islamabad, Pakistan"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/cityContryTVRS"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="227 Hotels"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="#EF4E22"
+        android:textSize="17dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/numbHotelsRS"
+        android:layout_gravity="right"
+        android:layout_marginRight="20dp"
+
+        />
+
+</androidx.cardview.widget.CardView>

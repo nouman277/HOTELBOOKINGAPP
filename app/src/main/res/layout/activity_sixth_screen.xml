@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SixthScreen"
+    android:orientation="vertical">
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:textColor="#0D0D0D"
+            android:background="#FFFFFF"
+            android:fontFamily="@font/gothamrounded_bold"
+            android:layout_gravity="center"
+            android:text="Islamabad"
+            android:layout_marginTop="8dp"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:src="@drawable/group_587"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/backbtnIH"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="66dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="@color/black"
+            >
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="17dp"
+                android:src="@drawable/location__4_"
+                android:layout_marginTop="4dp"
+                />
+
+            <TextView
+                android:layout_width="35dp"
+                android:layout_height="25dp"
+                android:text="Map"
+                android:textColor="@color/white"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="16sp"
+                android:layout_marginLeft="25dp" />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp">
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:text="13"
+            android:textSize="15sp"
+            android:fontFamily="@font/gothamroundedmedium_21022"
+            android:textColor="#EF4E22"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="55dp"
+            android:layout_height="20dp"
+            android:text="Dec, Fri"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="45dp"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/arrow1"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="105dp"/>
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:text="18"
+            android:fontFamily="@font/gothamroundedmedium_21022"
+            android:textColor="#EF4E22"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="130dp"/>
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:text="Dec, Wed"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="155dp"/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="24dp"
+            android:src="@drawable/_625"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="230dp"/>
+
+        <TextView
+            android:layout_width="12dp"
+            android:layout_height="20dp"
+            android:text="2"
+            android:textSize="15sp"
+            android:fontFamily="@font/gothamroundedmedium_21022"
+            android:textColor="#EF4E22"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="260dp"/>
+
+        <TextView
+            android:layout_width="45dp"
+            android:layout_height="20dp"
+            android:text="Adults"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="272dp"/>
+
+        <TextView
+            android:layout_width="12dp"
+            android:layout_height="20dp"
+            android:text="1"
+            android:fontFamily="@font/gothamroundedmedium_21022"
+            android:textColor="#EF4E22"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="327dp"/>
+
+        <TextView
+            android:layout_width="45dp"
+            android:layout_height="20dp"
+            android:text="Room"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="339dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="115dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="20dp"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="#EF4E22"
+            >
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="19dp"
+                android:text="Filter"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:fontFamily="@font/gothamrounded_light_21020"/>
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="6dp"
+                android:src="@drawable/filter_solid"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="115dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center_horizontal"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="#EF4E22"
+            >
+            <TextView
+                android:layout_width="35dp"
+                android:layout_height="19dp"
+                android:text="Sort"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:fontFamily="@font/gothamrounded_light_21020"/>
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="6dp"
+                android:src="@drawable/sort_solid"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="115dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="#EF4E22"
+            >
+
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="19dp"
+                android:text="RS"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:fontFamily="@font/gothamrounded_light_21020"/>
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/pnghut_download_icon_down_arrow_icon_arrows_icon"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:id="@+id/RVislamabadHotel"/>
+
+
+</LinearLayout>

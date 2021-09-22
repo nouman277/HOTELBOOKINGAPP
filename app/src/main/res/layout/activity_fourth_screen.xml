@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FourthScreen"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:textColor="#0D0D0D"
+            android:background="#FFFFFF"
+            android:fontFamily="@font/gothamrounded_bold"
+            android:layout_gravity="center"
+            android:text="Calendar"
+            android:layout_marginTop="8dp"
+            android:textSize="25sp"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:src="@drawable/group_587"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/backbtnFS"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        app:cardCornerRadius="15dp">
+
+        <TextView
+            android:layout_width="87dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="22sp"
+            android:textColor="#0D0D0D"
+            android:layout_marginLeft="40dp"
+            android:text="Check in" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="40dp"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="22sp"
+            android:textColor="#0D0D0D"
+            android:text="Check out" />
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="12dp"
+            android:textColor="#EF4E22"
+            android:fontFamily="@font/gothamrounded_bold"
+            android:text="13"
+            android:textSize="65sp" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="115dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/gothamroundedmedium_21022"
+            android:text="Fri"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="115dp"
+            android:layout_marginTop="59dp"
+            android:fontFamily="@font/gothamroundedmedium_21022"
+            android:text="Dec"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#EF4E22"
+            android:fontFamily="@font/gothamrounded_bold"
+            android:text="18"
+            android:textSize="65sp" />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/gothamroundedmedium_21022"
+            android:text="Wed"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="59dp"
+            android:fontFamily="@font/gothamroundedmedium_21022"
+            android:text="Dec"
+            android:textSize="25sp" />
+
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/arrow" />
+
+    </androidx.cardview.widget.CardView>
+
+    <CalendarView
+        android:id="@+id/simpleCalendarView"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:selectedWeekBackgroundColor="#EF4E22" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="#EF4E22"
+        app:cardCornerRadius="15dp"
+        android:id="@+id/confirmFS"
+        app:cardElevation="8dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONFIRM"
+            android:fontFamily="@font/gothamrounded_book_21018"
+            android:textSize="30sp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"/>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+</LinearLayout>

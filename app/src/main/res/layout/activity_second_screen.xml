@@ -1,0 +1,893 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    tools:context=".SecondScreen"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical">
+
+
+
+        // app name
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/logo_1"/>
+
+        //layout for booking
+
+        <LinearLayout
+            android:layout_width="340dp"
+            android:layout_height="585dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/group_3926"
+            android:orientation="vertical">
+
+            //tag line find the hotel
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:text="FIND A HOTEL"
+                android:fontFamily="@font/gothamrounded_bold"
+                android:textSize="35sp" />
+            //tag line book on lowest rate
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:text="Book the lowest rate "
+                android:fontFamily="@font/gothamrounded_light_21020"
+                android:textSize="22sp" />
+
+            //search card view
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="280dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:id="@+id/searchTV"
+                app:cardCornerRadius="15dp">
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="9dp"
+                    android:src="@drawable/path_6021"/>
+
+
+                <TextView
+                    android:layout_width="215dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="50dp"
+                    android:hint="Search for destination"
+                    android:fontFamily="@font/gothamroundedmedium_21022"
+                    android:layout_marginTop="12dp"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+            //booking dates card view
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:id="@+id/DatesetTV"
+                app:cardCornerRadius="15dp">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/gothamroundedmedium_21022"
+
+                    android:layout_marginLeft="20dp"
+                    android:text="Check in" />
+
+                <TextView
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:fontFamily="@font/gothamroundedmedium_21022"
+                    android:text="Check out" />
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#EF4E22"
+                    android:fontFamily="@font/gothamrounded_bold"
+                    android:text="13"
+                    android:textSize="45sp" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="77dp"
+                    android:layout_marginLeft="77dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/gothamroundedmedium_21022"
+                    android:text="Fri"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="77dp"
+                    android:layout_marginLeft="77dp"
+                    android:layout_marginTop="38dp"
+                    android:fontFamily="@font/gothamroundedmedium_21022"
+                    android:text="Dec"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="187dp"
+                    android:layout_marginLeft="187dp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#EF4E22"
+                    android:fontFamily="@font/gothamrounded_bold"
+                    android:text="18"
+                    android:textSize="45sp" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="237dp"
+                    android:layout_marginLeft="237dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/gothamroundedmedium_21022"
+                    android:text="Wed"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="237dp"
+                    android:layout_marginLeft="237dp"
+                    android:layout_marginTop="38dp"
+                    android:fontFamily="@font/gothamroundedmedium_21022"
+                    android:text="Dec"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="130dp"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/arrow" />
+
+            </androidx.cardview.widget.CardView>
+
+            //number of adults and children
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:id="@+id/bookingtv"
+                app:cardCornerRadius="15dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/group_contact" />
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/gothamroundedmedium_21022"
+                    android:text="1"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="55dp"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/gothamroundedmedium_21022"
+                    android:text="Room"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="5dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="95dp"
+                    android:layout_marginLeft="95dp"
+                    android:layout_marginTop="8dp"
+                    android:text="-"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="105dp"
+                    android:layout_marginLeft="105dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/gothamroundedmedium_21022"
+                    android:text="2"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="340dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/gothamroundedmedium_21022"
+                    android:text="Adults"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="5dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="165dp"
+                    android:layout_marginLeft="165dp"
+                    android:layout_marginTop="8dp"
+                    android:text="-"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="170dp"
+                    android:layout_marginLeft="170dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/gothamroundedmedium_21022"
+                    android:text="5"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="55dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="185dp"
+                    android:layout_marginLeft="185dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/gothamroundedmedium_21022"
+                    android:text="Children"
+                    android:textSize="12sp" />
+
+            </androidx.cardview.widget.CardView>
+            //search button
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="280dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+
+                app:cardBackgroundColor="#EF4E22"
+                app:cardCornerRadius="15dp"
+                android:id="@+id/sixthScrren">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="110dp"
+                    android:layout_marginLeft="110dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/gothamrounded_bold"
+                    android:text="SEARCH"
+                    android:textColor="@color/white" />
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="230dp">
+                // tag line top destinanation
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gothamrounded_bold"
+                    android:text="Top Destnations"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="2dp"
+                    android:id="@+id/Sevensec">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="SHOW ALL"
+                        android:fontFamily="@font/gothamroundedmedium_21022"
+
+
+                        android:textColor="#EF4E22"
+                        />
+                </androidx.cardview.widget.CardView>
+
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+
+
+
+        //recycler view for top destination
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:id="@+id/recyclerViewTopDestination"
+            android:divider="@null"
+            app:reverseLayout="true"
+            app:layoutManager="LinearLayoutManager"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            // tag line Featured Hotel
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Featured Hotel"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="55dp"
+                android:fontFamily="@font/gothamrounded_bold"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="55dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SHOW ALL"
+                android:fontFamily="@font/gothamroundedmedium_21022"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="23dp"
+                android:textColor="#EF4E22"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        //recycler view for Featured Hotel
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:id="@+id/recyclerViewFeaturedHotel"
+            android:divider="@null"
+            app:reverseLayout="true"
+            app:layoutManager="LinearLayoutManager">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+        //tag line ALL room offer
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All roomph rooms offer"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:fontFamily="@font/gothamrounded_bold"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"/>
+        //Wifi
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="20dp">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_done_24px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wifi"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:fontFamily="@font/gothamrounded_bold"
+                android:layout_marginTop="9dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginLeft="70dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enjoy free wifi in all Roomph Properties"
+                android:textSize="10sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="45dp"
+                android:layout_marginStart="70dp"
+                android:fontFamily="@font/gothamrounded_light_21020"
+                android:layout_marginLeft="70dp" />
+
+        </androidx.cardview.widget.CardView>
+        //AC
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="20dp">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_done_24px"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AC"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:fontFamily="@font/gothamrounded_bold"
+                android:layout_marginTop="9dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginLeft="80dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You'll have a modern AC in your room"
+                android:textSize="10sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="45dp"
+                android:layout_marginStart="70dp"
+                android:fontFamily="@font/gothamrounded_light_21020"
+                android:layout_marginLeft="70dp" />
+        </androidx.cardview.widget.CardView>
+        //Clean bath
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_done_24px"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clean Bath"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:fontFamily="@font/gothamrounded_bold"
+                android:layout_marginTop="9dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginLeft="80dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All Roomph hotels have clean facilities"
+                android:textSize="10sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="45dp"
+                android:layout_marginStart="70dp"
+                android:fontFamily="@font/gothamrounded_light_21020"
+                android:layout_marginLeft="70dp" />
+
+        </androidx.cardview.widget.CardView>
+        //book now pay later
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_done_24px"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Book now,Pay later"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:fontFamily="@font/gothamrounded_bold"
+                android:layout_marginTop="9dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginLeft="80dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Effortlessly pay on arrival"
+                android:textSize="10sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="45dp"
+                android:layout_marginStart="70dp"
+                android:fontFamily="@font/gothamrounded_light_21020"
+                android:layout_marginLeft="70dp" />
+
+
+        </androidx.cardview.widget.CardView>
+        // tag line even more comfortabel
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Even more comfort with "
+            android:textColor="@color/black"
+            android:fontFamily="@font/gothamrounded_bold"
+            android:layout_gravity="center_horizontal"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"/>
+        //tag line Hotel booking app
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/group_3925__1_"
+
+            android:layout_gravity="center_horizontal"
+
+            android:layout_marginTop="5dp"/>
+        //spring matress
+        <androidx.cardview.widget.CardView
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="#EF4E22"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_done_24px__1_"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Spring matress"
+                android:fontFamily="@font/gothamrounded_bold"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="9dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginLeft="80dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gothamroundedmedium_21022"
+                android:text="Relly relax"
+                android:textSize="10sp"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginLeft="80dp" />
+
+
+        </androidx.cardview.widget.CardView>
+        //breakfast
+        <androidx.cardview.widget.CardView
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="#EF4E22"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_done_24px__1_"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Breakfast"
+                android:fontFamily="@font/gothamrounded_bold"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="9dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginLeft="80dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gothamroundedmedium_21022"
+                android:text="Enjoy a complmentary breakfast"
+                android:textSize="10sp"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginLeft="80dp" />
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        //Secure Location
+        <androidx.cardview.widget.CardView
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="#EF4E22"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/ic_done_24px__1_"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Secure Location"
+                android:fontFamily="@font/gothamrounded_bold"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="9dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginLeft="80dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gothamroundedmedium_21022"
+                android:text="Extra security with Safe, special looks"
+                android:textSize="10sp"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginLeft="80dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        //Lowest rate
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="#EF4E22"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_done_24px__1_"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lowest rate"
+                android:fontFamily="@font/gothamrounded_bold"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="9dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginLeft="80dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gothamroundedmedium_21022"
+                android:text="Lowest price guaranteed"
+                android:textSize="10sp"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginLeft="80dp" />
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+        // buttons
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginTop="30dp">
+            //Search
+            <androidx.cardview.widget.CardView
+                android:layout_width="101dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/path_6021"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp" />
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="70dp"
+                    android:text="Search"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="@font/gothamrounded_bold"
+                    android:textSize="16sp"
+                    android:textColor="#EF4E22"
+                    android:layout_gravity="center_horizontal"/>
+            </androidx.cardview.widget.CardView>
+
+            //Favourite
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="101dp"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/star_solid__1_"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp" />
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="70dp"
+                    android:text="Favourites"
+                    android:fontFamily="@font/gothamrounded_bold"
+                    android:textSize="16sp"
+                    android:gravity="center_horizontal"
+                    android:textColor="#B7BEC6"
+                    android:layout_gravity="center_horizontal"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+            //Booking
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="101dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/group_3939"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp" />
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="70dp"
+                    android:text="Booking"
+                    android:fontFamily="@font/gothamrounded_bold"
+                    android:textSize="16sp"
+                    android:gravity="center_horizontal"
+                    android:textColor="#B7BEC6"
+                    android:layout_gravity="center_horizontal"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+            // profile
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="101dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/user_solid__4_"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp" />
+
+
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="70dp"
+                    android:text="Profile"
+                    android:fontFamily="@font/gothamrounded_bold"
+                    android:textSize="16sp"
+                    android:gravity="center_horizontal"
+                    android:textColor="#B7BEC6"
+                    android:layout_gravity="center_horizontal"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

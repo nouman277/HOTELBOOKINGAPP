@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="385dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="380dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="275dp"
+            app:cardCornerRadius="20dp">
+
+            //featured Hotel image
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="165dp">
+                <ImageView
+                    android:layout_width="106.66dp"
+                    android:layout_height="68.5dp"
+                    android:src="@drawable/group_3932"
+                    android:id="@+id/prmimumtag"/>
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/IslamabadHotelImage"/>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="bottom"
+                    app:cardBackgroundColor="@color/black">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Book Now, Pay Later"
+                        android:layout_gravity="center"
+                        android:textSize="13dp"
+                        android:fontFamily="@font/gothamroundedmedium_21022"
+                        android:textColor="@color/white"/>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/starImage"
+                        android:src="@drawable/star_solid__1_"/>
+                </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Safari Hotel Davis road"
+                android:fontFamily="@font/gothamrounded_bold"
+
+                android:textColor="@color/black"
+
+                android:layout_marginLeft="20dp"
+                android:textSize="18sp"
+                android:layout_marginTop="180dp"
+                android:id="@+id/islamabadHotelName"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gothamrounded_bold"
+                android:text="RS. 4,500"
+                android:layout_marginTop="180dp"
+                android:textSize="18sp"
+                android:layout_gravity="right"
+                android:layout_marginRight="20dp"
+                android:textColor="#EF4E22"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="F-6, Islamabad"
+                android:textSize="11sp"
+                android:fontFamily="@font/gothamroundedmedium_21022"
+                android:textColor="#858585"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="210dp"
+                />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                android:fontFamily="@font/gothamroundedmedium_21022"
+                android:textColor="#858585"
+                android:text="avg. per night"
+                android:layout_marginTop="210dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="20dp" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="67dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="230dp"
+                app:cardCornerRadius="10dp"
+                android:layout_marginLeft="23dp"
+                app:cardBackgroundColor="#EFEFEF">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Hotel"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:src="@drawable/image_3"
+                android:layout_marginTop="230dp"
+                android:layout_marginLeft="100dp"
+                />
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:src="@drawable/image_3"
+                android:layout_marginTop="230dp"
+                android:layout_marginLeft="117dp"
+                />
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:src="@drawable/image_3"
+                android:layout_marginTop="230dp"
+                android:layout_marginLeft="133dp"
+                />
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:fontFamily="@font/gothamrounded_bold"
+                android:text="9.2"
+                android:layout_marginTop="227dp"
+                android:textSize="18sp"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="right"
+                android:textColor="#EF4E22"
+                android:id="@+id/featuredHotelRating"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=".Rooms Available"
+                android:textSize="11sp"
+                android:fontFamily="@font/gothamroundedmedium_21022"
+                android:textColor="#45B85C"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="255dp"
+                android:id="@+id/roomAvaliGreen"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=".Rooms Unavailable"
+                android:textSize="11sp"
+                android:fontFamily="@font/gothamroundedmedium_21022"
+                android:textColor="#FC0000"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="255dp"
+                android:id="@+id/roomUnavialRed"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                android:fontFamily="@font/gothamroundedmedium_21022"
+                android:textColor="@color/black"
+                android:text="23 reviews"
+                android:layout_marginTop="255dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="20dp" />
+
+
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="299dp"
+            android:text="Airport"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="335dp"
+            android:text="Heritage Museum of Arts"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
