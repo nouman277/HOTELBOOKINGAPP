@@ -1,6 +1,7 @@
 package com.example.hotelbookingapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -17,12 +18,23 @@ public class SeventhScreen extends AppCompatActivity {
     ArrayList<model_IH> dataListIH2;
     adapterIH adapterIHV2;
     ImageView backbtn;
+    CardView filter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_seventh_screen);
 
+        filter = findViewById(R.id.filterTV);
+        filter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent i = new Intent(SeventhScreen.this,NinthScreen.class);
+                startActivity(i);
+
+            }
+        });
 
         backbtn = findViewById(R.id.backbtnIH2);
 

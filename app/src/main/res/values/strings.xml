@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">HotelBookingApp</string>
+    <string name="guest">Guesthouse/B and B</string>
+
+    <string name="grandHotelText">Centara Grand Inn Hotel in Islamabad has 4-star accommodations with a garden and a terrace. Among the facilities of this property restaurant, a 24-hour front desk and room service, along with free WiFi ...</string>
+
 </resources>
