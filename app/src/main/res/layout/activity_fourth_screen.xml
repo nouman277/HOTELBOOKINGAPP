@@ -12,8 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <EditText
-            android:layout_width="120dp"
-            android:layout_height="45dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:textColor="#0D0D0D"
             android:background="#FFFFFF"
             android:fontFamily="@font/gothamrounded_bold"
@@ -23,7 +23,7 @@
             android:textSize="25sp"/>
 
         <ImageView
-            android:layout_width="25dp"
+            android:layout_width="30dp"
             android:layout_height="30dp"
             android:src="@drawable/group_587"
             android:layout_marginTop="20dp"
@@ -44,7 +44,7 @@
         app:cardCornerRadius="15dp">
 
         <TextView
-            android:layout_width="87dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/roboto_regular"
             android:textSize="22sp"
@@ -53,7 +53,7 @@
             android:text="Check in" />
 
         <TextView
-            android:layout_width="100dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:layout_marginRight="40dp"
@@ -63,7 +63,7 @@
             android:text="Check out" />
 
         <TextView
-            android:layout_width="90dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
             android:layout_marginLeft="45dp"
@@ -74,7 +74,7 @@
             android:textSize="65sp" />
 
         <TextView
-            android:layout_width="50dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="115dp"
             android:layout_marginTop="24dp"
@@ -83,7 +83,7 @@
             android:textSize="25sp" />
 
         <TextView
-            android:layout_width="50dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="115dp"
             android:layout_marginTop="59dp"
@@ -92,10 +92,10 @@
             android:textSize="25sp" />
 
         <TextView
-            android:layout_width="90dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
-            android:layout_marginRight="40dp"
+            android:layout_marginRight="59dp"
             android:layout_marginTop="10dp"
             android:textColor="#EF4E22"
             android:fontFamily="@font/gothamrounded_bold"
@@ -103,7 +103,7 @@
             android:textSize="65sp" />
 
         <TextView
-            android:layout_width="60dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:layout_marginRight="4dp"
@@ -113,7 +113,7 @@
             android:textSize="25sp" />
 
         <TextView
-            android:layout_width="50dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:layout_marginRight="10dp"
@@ -140,7 +140,9 @@
         android:selectedWeekBackgroundColor="#EF4E22" />
 
     <androidx.cardview.widget.CardView
-        android:layout_width="340dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
         android:layout_height="60dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"

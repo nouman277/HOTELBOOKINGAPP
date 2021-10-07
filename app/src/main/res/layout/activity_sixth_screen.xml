@@ -14,8 +14,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <EditText
-            android:layout_width="110dp"
-            android:layout_height="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:textColor="#0D0D0D"
             android:background="#FFFFFF"
             android:fontFamily="@font/gothamrounded_bold"
@@ -34,8 +34,8 @@
             />
 
         <androidx.cardview.widget.CardView
-            android:layout_width="66dp"
-            android:layout_height="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_gravity="right"
             android:layout_marginRight="20dp"
@@ -60,25 +60,32 @@
         </androidx.cardview.widget.CardView>
 
     </androidx.cardview.widget.CardView>
-
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
     <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="40dp"
+        android:layout_weight="1"
         android:layout_marginTop="4dp">
 
         <TextView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="13"
             android:textSize="15sp"
             android:fontFamily="@font/gothamroundedmedium_21022"
             android:textColor="#EF4E22"
             android:layout_marginTop="10dp"
-            android:layout_marginLeft="20dp"/>
+            android:layout_marginLeft="23dp"
+          />
+
+
 
         <TextView
-            android:layout_width="55dp"
-            android:layout_height="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Dec, Fri"
             android:textSize="15sp"
             android:layout_marginTop="10dp"
@@ -86,15 +93,15 @@
 
         <ImageView
             android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_height="wrap_content"
             android:src="@drawable/arrow1"
-            android:textSize="15sp"
-            android:layout_marginTop="10dp"
+
+
             android:layout_marginLeft="105dp"/>
 
         <TextView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="18"
             android:fontFamily="@font/gothamroundedmedium_21022"
             android:textColor="#EF4E22"
@@ -103,24 +110,24 @@
             android:layout_marginLeft="130dp"/>
 
         <TextView
-            android:layout_width="70dp"
-            android:layout_height="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Dec, Wed"
             android:textSize="15sp"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="155dp"/>
 
         <ImageView
-            android:layout_width="15dp"
-            android:layout_height="24dp"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
             android:src="@drawable/_625"
             android:textSize="15sp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:layout_marginLeft="230dp"/>
 
         <TextView
-            android:layout_width="12dp"
-            android:layout_height="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="2"
             android:textSize="15sp"
             android:fontFamily="@font/gothamroundedmedium_21022"
@@ -129,16 +136,16 @@
             android:layout_marginLeft="260dp"/>
 
         <TextView
-            android:layout_width="45dp"
-            android:layout_height="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Adults"
             android:textSize="15sp"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="272dp"/>
 
         <TextView
-            android:layout_width="12dp"
-            android:layout_height="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="1"
             android:fontFamily="@font/gothamroundedmedium_21022"
             android:textColor="#EF4E22"
@@ -147,8 +154,8 @@
             android:layout_marginLeft="327dp"/>
 
         <TextView
-            android:layout_width="45dp"
-            android:layout_height="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Room"
             android:textSize="15sp"
             android:layout_marginTop="10dp"
@@ -156,16 +163,21 @@
 
     </androidx.cardview.widget.CardView>
 
-    <androidx.cardview.widget.CardView
+</LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_marginTop="4dp">
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal">
 
         <androidx.cardview.widget.CardView
             android:layout_width="115dp"
             android:layout_height="25dp"
             android:layout_marginTop="8dp"
+            android:layout_weight="1"
             android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
             app:cardCornerRadius="8dp"
             app:cardBackgroundColor="#EF4E22"
             >
@@ -191,8 +203,11 @@
         <androidx.cardview.widget.CardView
             android:layout_width="115dp"
             android:layout_height="25dp"
+            android:layout_weight="1"
             android:layout_marginTop="8dp"
-            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
             app:cardCornerRadius="8dp"
             app:cardBackgroundColor="#EF4E22"
             >
@@ -216,9 +231,11 @@
         <androidx.cardview.widget.CardView
             android:layout_width="115dp"
             android:layout_height="25dp"
+            android:layout_weight="1"
             android:layout_marginTop="8dp"
-            android:layout_gravity="right"
             android:layout_marginRight="20dp"
+            android:layout_marginLeft="10dp"
+
             app:cardCornerRadius="8dp"
             app:cardBackgroundColor="#EF4E22"
             >
@@ -242,7 +259,7 @@
         </androidx.cardview.widget.CardView>
 
 
-    </androidx.cardview.widget.CardView>
+    </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"

@@ -17,12 +17,8 @@
             //featured Hotel image
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="165dp">
-                <ImageView
-                    android:layout_width="106.66dp"
-                    android:layout_height="68.5dp"
-                    android:src="@drawable/group_3932"
-                    android:id="@+id/prmimumtag"/>
+                android:layout_height="wrap_content">
+
 
 
                 <ImageView

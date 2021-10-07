@@ -92,79 +92,11 @@ public class SecondScreen extends AppCompatActivity {
 
     private void GetDataFromTopDstination() {
 
-        ProgressDialog progressDialog
-                = new ProgressDialog(this);
-        progressDialog.setTitle("Fetching data....");
-        progressDialog.show();
-
-        topDestinationRV = findViewById(R.id.recyclerViewTopDestination);
-        topDestinationRV = (RecyclerView) findViewById(R.id.recyclerViewTopDestination);
-        topDestinationRV.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
-
-        dataListTD = new ArrayList<>();
-        adapterTopDestination = new adapterTopDestination(dataListTD);
-        topDestinationRV.setAdapter(adapterTopDestination);
-        adapterTopDestination.notifyDataSetChanged();
-
-        dbTD = FirebaseFirestore.getInstance();
-
-
-
-
-        dbTD.collection("topDestination").get()
-                .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
-                    @Override
-                    public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
-                        List<DocumentSnapshot> list = queryDocumentSnapshots.getDocuments();
-
-
-                        for (DocumentSnapshot d : list) {
-                            modelTopDestination obj = d.toObject(modelTopDestination.class);
-                            dataListTD.add(obj);
-                        }
-                        adapterTopDestination.notifyDataSetChanged();
-                        progressDialog.dismiss();
-
-                    }
-                });
-
     }
 
+
+
     private void GetDataFromFeaturedHotel(){
-
-
-        featuredHotelRV=findViewById(R.id.recyclerViewFeaturedHotel);
-        featuredHotelRV=(RecyclerView)findViewById(R.id.recyclerViewFeaturedHotel);
-        featuredHotelRV.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
-        datalistFH=new ArrayList<>();
-        adapterFeartureHotel=new adapterFeartureHotel(datalistFH);
-        featuredHotelRV.setAdapter(adapterFeartureHotel);
-        adapterFeartureHotel.notifyDataSetChanged();
-
-        dbFH=FirebaseFirestore.getInstance();
-
-        ProgressDialog progressDialog
-                = new ProgressDialog(this);
-        progressDialog.setTitle("Fetching data....");
-        progressDialog.show();
-
-        dbFH.collection("FearturedHotel").get()
-                .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
-                    @Override
-                    public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
-                        List<DocumentSnapshot> listFH = queryDocumentSnapshots.getDocuments();
-
-
-                        for (DocumentSnapshot dFH : listFH) {
-                            modelFeaturedHotel obj = dFH.toObject(modelFeaturedHotel.class);
-                            datalistFH.add(obj);
-                        }
-                        adapterFeartureHotel.notifyDataSetChanged();
-
-                        progressDialog.dismiss();
-                    }
-                });
-
 
 
 

@@ -61,7 +61,6 @@ public class adapterIH extends RecyclerView.Adapter<adapterIH.myViewHolder>
         public myViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            Prmimumtag = itemView.findViewById(R.id.prmimumtag);
             IslamabadHotelImage=itemView.findViewById(R.id.IslamabadHotelImage);
             starImage=itemView.findViewById(R.id.starImage);
             islamabadHotelName=itemView.findViewById(R.id.islamabadHotelName);

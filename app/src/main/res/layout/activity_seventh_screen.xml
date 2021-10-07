@@ -8,10 +8,14 @@
     android:orientation="vertical">
 
 
-
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1"
         android:layout_height="60dp">
         <TextView
             android:layout_width="wrap_content"
@@ -144,7 +148,8 @@
             android:layout_height="30dp"
             android:layout_marginTop="20dp"
             android:layout_gravity="right"
-            android:layout_marginRight="7dp"
+            android:layout_marginRight="10dp"
+
             app:cardCornerRadius="8dp"
             app:cardBackgroundColor="@color/black"
             >
@@ -152,7 +157,7 @@
             <ImageView
                 android:layout_width="16dp"
                 android:layout_height="18dp"
-                android:layout_gravity="center"
+
 
                 android:src="@drawable/location__4_" />
 
@@ -173,18 +178,23 @@
 
     </androidx.cardview.widget.CardView>
 
-    <androidx.cardview.widget.CardView
+</LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_marginTop="4dp">
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal">
 
         <androidx.cardview.widget.CardView
             android:layout_width="115dp"
             android:layout_height="25dp"
             android:layout_marginTop="8dp"
-            android:layout_marginLeft="20dp"
-            app:cardCornerRadius="8dp"
+            android:layout_weight="1"
             android:id="@+id/filterTV"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            app:cardCornerRadius="8dp"
             app:cardBackgroundColor="#EF4E22"
             >
 
@@ -209,8 +219,11 @@
         <androidx.cardview.widget.CardView
             android:layout_width="115dp"
             android:layout_height="25dp"
+            android:layout_weight="1"
             android:layout_marginTop="8dp"
-            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
             app:cardCornerRadius="8dp"
             app:cardBackgroundColor="#EF4E22"
             >
@@ -234,9 +247,11 @@
         <androidx.cardview.widget.CardView
             android:layout_width="115dp"
             android:layout_height="25dp"
+            android:layout_weight="1"
             android:layout_marginTop="8dp"
-            android:layout_gravity="right"
             android:layout_marginRight="20dp"
+            android:layout_marginLeft="10dp"
+
             app:cardCornerRadius="8dp"
             app:cardBackgroundColor="#EF4E22"
             >
@@ -256,8 +271,11 @@
                 android:layout_marginRight="5dp"
                 android:src="@drawable/pnghut_download_icon_down_arrow_icon_arrows_icon"/>
 
+
         </androidx.cardview.widget.CardView>
-    </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
