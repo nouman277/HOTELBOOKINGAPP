@@ -26,7 +26,7 @@ public class SecondScreen extends AppCompatActivity {
     adapterTopDestination adapterTopDestination;
     adapterFeartureHotel adapterFeartureHotel;
     FirebaseFirestore dbTD,dbFH;
-    CardView date,booking,search,sixthscreen ,seven;
+    CardView date,booking,search,sixthscreen ,seven ,Booking;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +45,15 @@ public class SecondScreen extends AppCompatActivity {
         search = findViewById(R.id.searchTV);
         sixthscreen =findViewById(R.id.sixthScrren);
         seven = findViewById(R.id.Sevensec);
+        Booking =findViewById(R.id.bookingBtn);
+
+        Booking.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(SecondScreen.this,Screen_NIghteen.class);
+                startActivity(i);
+            }
+        });
 
         seven.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -1,0 +1,883 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Screen_NIghteen">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:background="#FFFFFF"
+                android:fontFamily="@font/gothamrounded_bold"
+                android:text="Booking"
+                android:textColor="#0D0D0D"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/backbtnFS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/group_3901" />
+
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:id="@+id/booking_step1Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/bookingStep1_step1Text"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="@drawable/orange_circle_35dp"
+                android:fontFamily="@font/gothamrounded_bold"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/booking_step1ToStep2"
+                android:layout_width="wrap_content"
+                android:layout_height="0.8dp"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/bookingStep1_step2Text"
+                android:layout_toEndOf="@id/bookingStep1_step1Text"
+                android:background="#777777" />
+
+            <TextView
+                android:id="@+id/bookingStep1_step2Text"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:background="@drawable/gray__border_circle"
+                android:fontFamily="@font/gothamroundedmedium_21022"
+                android:gravity="center"
+                android:text="2"
+                android:textSize="20sp" />
+
+
+            <View
+                android:id="@+id/booking_step2ToStep3"
+                android:layout_width="wrap_content"
+                android:layout_height="0.8dp"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/bookingStep1_step3Text"
+                android:layout_toEndOf="@id/bookingStep1_step2Text"
+                android:background="#777777" />
+
+            <TextView
+                android:id="@+id/bookingStep1_step3Text"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="@drawable/gray__border_circle"
+                android:fontFamily="@font/gothamroundedmedium_21022"
+                android:gravity="center"
+                android:text="3"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/booking_step1Text"
+                android:fontFamily="@font/gothamroundedmedium_21022"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:text="Your Detail"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/booking_step2Text"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/gothamroundedmedium_21022"
+                android:text="Payment Information"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/booking_step3Text"
+                android:fontFamily="@font/gothamroundedmedium_21022"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_toEndOf="@id/booking_step3Text"
+                android:gravity="center"
+                android:text="Confirmation"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/placeholder_g_hotel"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Centara Grand Mirage Hotel"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:fontFamily="@font/gothamroundedmedium_21022"
+                android:layout_marginTop="125dp"
+                android:layout_marginStart="30dp"/>
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/image_3"
+                android:layout_marginTop="130dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="75dp"
+                />
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/image_3"
+                android:layout_marginTop="130dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="60dp"
+                />
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/image_3"
+                android:layout_marginTop="130dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="45dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="House No 11 Kaghan Road, F-8/3 Islamabad, Islamabad, Pakistan"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="30dp"
+                android:textSize="11dp"
+                android:textColor="#858585"
+                android:layout_marginTop="150dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancellation Policy:"
+                android:fontFamily="@font/gothamrounded_bold"
+                android:textSize="16dp"
+                android:textColor="#F04E23"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="185dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cancellation Policy: Free cancellation if done 24 hours prior."
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="30dp"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="210dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:background="#777777"
+                android:layout_marginTop="260dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check In"
+                android:fontFamily="@font/gothamrounded_bold"
+                android:textSize="16dp"
+                android:textColor="#F04E23"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="275dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="01 September 2020"
+                android:fontFamily="@font/gothamroundedmedium_21022"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="300dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monday"
+                android:fontFamily="@font/gothamroundedmedium_21022"
+                android:textSize="14dp"
+                android:textColor="#858585"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="315dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check out"
+                android:fontFamily="@font/gothamrounded_bold"
+                android:textSize="16dp"
+                android:textColor="#F04E23"
+                android:layout_marginRight="71dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="275dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="02 September 2020"
+                android:fontFamily="@font/gothamroundedmedium_21022"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="300dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tuesday"
+                android:fontFamily="@font/gothamroundedmedium_21022"
+                android:textSize="14dp"
+                android:textColor="#858585"
+                android:layout_marginRight="95dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="315dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Length Of Stay:"
+                android:fontFamily="@font/gothamrounded_bold"
+                android:textSize="16dp"
+                android:textColor="#F04E23"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="350dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 Night"
+                android:textColor="@color/black"
+                android:fontFamily="@font/roboto_medium"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="370dp"
+                android:textSize="14dp"/>
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="#F04E23"
+                android:layout_gravity="right"
+                android:layout_marginTop="345dp"
+                android:layout_marginRight="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Change Date"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textSize="15dp"/>
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="390dp"/>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Payment Amount"
+                android:fontFamily="@font/gothamrounded_bold"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:layout_marginLeft="30dp"/>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:layout_gravity="end"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/arrow_pointing_downwords"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="2dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 Rooms"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PKR 9,000"
+                android:fontFamily="@font/gothamrounded_bold"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="20dp"/>
+
+            <TextView
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:text="G.S.T (16.00%) excluded"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PKR 1,440"
+                android:fontFamily="@font/gothamrounded_bold"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="20dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:background="#858585"
+                android:layout_marginTop="85dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price (for 2 guests)"
+                android:layout_marginTop="95dp"
+                android:textSize="13dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#F04E23"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PKR 10,440"
+                android:fontFamily="@font/gothamrounded_bold"
+                android:textColor="#F04E23"
+                android:textSize="13dp"
+                android:layout_marginTop="95dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="20dp"/>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Booking Condition"
+                android:fontFamily="@font/gothamrounded_bold"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:layout_marginLeft="30dp"/>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:layout_gravity="end"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/arrow_pointing_right"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="2dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/exclimination_sign"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Almost there... Enter your details below and lock-in the lowest price room at Centara Grand Mirage Hotel...Don't miss out. Book now!"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/gothamrounded_bold"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            app:cardCornerRadius="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gothamrounded_bold"
+            android:textSize="16dp"
+            android:text="Enter your details please"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="14dp"
+            android:text="First Name"
+            android:textColor="@color/black"
+            android:layout_marginTop="55dp"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:background="@drawable/eidit_text_border"
+            android:textSize="14dp"
+            android:hint="Jhon"
+            android:textColor="@color/black"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="10dp"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="14dp"
+            android:text="Last Name"
+            android:textColor="@color/black"
+            android:layout_marginTop="55dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="90dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="14dp"
+            android:hint="Doe"
+            android:background="@drawable/eidit_text_border"
+            android:textColor="@color/black"
+            android:layout_marginTop="80dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="15dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="14dp"
+            android:text="Email Address"
+            android:textColor="@color/black"
+            android:layout_marginTop="130dp"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="14dp"
+            android:background="@drawable/email_border"
+            android:hint="Johndoe@gmail.com"
+            android:textColor="@color/black"
+            android:layout_marginTop="155dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You will receive a confirmation email"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="190dp"
+            android:textColor="#F04E23"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="14dp"
+            android:text="Confirm Email Address"
+            android:textColor="@color/black"
+            android:layout_marginTop="220dp"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="14dp"
+            android:background="@drawable/email_border"
+            android:hint="Johndoe@gmail.com"
+            android:textColor="@color/black"
+            android:layout_marginTop="245dp"
+            android:layout_marginLeft="10dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="#D9D9D9"
+            android:layout_marginTop="290dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gothamrounded_bold"
+            android:textSize="16dp"
+            android:text="1 Room: Single Room - Standard"
+            android:textColor="@color/black"
+            android:layout_marginTop="300dp"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancellation Policy: Free cancellation if done 24 hours prior."
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="325dp"
+            android:textColor="#F04E23"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="12dp"/>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="#D9D9D9"
+            android:layout_marginTop="360dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gothamrounded_bold"
+                android:textSize="16dp"
+                android:text="Enter your details please"
+                android:textColor="@color/black"
+                android:layout_marginTop="380dp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="14dp"
+                android:text="Email Address"
+                android:textColor="@color/black"
+                android:layout_marginTop="410dp"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="14dp"
+                android:background="@drawable/email_border"
+                android:hint="Johndoe@gmail.com"
+                android:textColor="@color/black"
+                android:layout_marginTop="435dp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="14dp"
+                android:text="Special Requests"
+                android:textColor="@color/black"
+                android:layout_marginTop="470dp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="14dp"
+                android:background="@drawable/rectange_for_special_request"
+                android:hint="Write your request here..."
+                android:textColor="@color/black"
+                android:layout_marginTop="490dp"
+                android:layout_marginLeft="10dp"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="660dp"
+                android:text="I don't have a credit card"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="14dp"
+                android:layout_marginLeft="50dp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="710dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="#F04E23"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Continue"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:fontFamily="@font/gothamroundedmedium_21022"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get instant confirmation"
+                android:textColor="#F04E23"
+                android:textSize="12dp"
+                android:layout_gravity="center"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        // buttons
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp">
+            //Search
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/path_6021__1_"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="70dp"
+                    android:text="Search"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="@font/gothamrounded_bold"
+                    android:textSize="16sp"
+                    android:textColor="#B7BEC6"
+                    android:layout_gravity="center_horizontal"/>
+            </androidx.cardview.widget.CardView>
+
+            //Favourite
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/star_solid__1_"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="70dp"
+                    android:text="Favourites"
+                    android:fontFamily="@font/gothamrounded_bold"
+                    android:textSize="16sp"
+                    android:gravity="center_horizontal"
+                    android:textColor="#B7BEC6"
+                    android:layout_gravity="center_horizontal"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+            //Booking
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/group_3939__1_"
+                    android:layout_marginTop="15dp"
+                     />
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="70dp"
+                    android:text="Booking"
+                    android:fontFamily="@font/gothamrounded_bold"
+                    android:textSize="16sp"
+                    android:gravity="center_horizontal"
+                    android:textColor="#EF4E22"
+                    android:layout_gravity="center_horizontal"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+            // profile
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/user_solid__4_"
+                    android:layout_marginTop="15dp"
+                     />
+
+
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="70dp"
+                    android:text="Profile"
+                    android:fontFamily="@font/gothamrounded_bold"
+                    android:textSize="16sp"
+                    android:gravity="center_horizontal"
+                    android:textColor="#B7BEC6"
+                    android:layout_gravity="center_horizontal"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

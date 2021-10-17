@@ -831,10 +831,10 @@
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
                     android:src="@drawable/path_6021"
                     android:layout_marginTop="15dp"
-                    android:layout_marginStart="25dp"
-                    android:layout_marginLeft="25dp" />
+                     />
 
                 <TextView
                     android:layout_width="60dp"
@@ -861,8 +861,8 @@
                     android:layout_height="40dp"
                     android:src="@drawable/star_solid__1_"
                     android:layout_marginTop="15dp"
-                    android:layout_marginStart="25dp"
-                    android:layout_marginLeft="25dp" />
+                    android:layout_gravity="center_horizontal"
+                   />
 
                 <TextView
                     android:layout_width="90dp"
@@ -883,14 +883,15 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_weight="1"
+                android:id="@+id/bookingBtn"
                 android:layout_height="match_parent">
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
                     android:src="@drawable/group_3939"
                     android:layout_marginTop="15dp"
-                    android:layout_marginStart="25dp"
-                    android:layout_marginLeft="25dp" />
+                 />
 
                 <TextView
                     android:layout_width="90dp"
@@ -917,8 +918,8 @@
                     android:layout_height="40dp"
                     android:src="@drawable/user_solid__4_"
                     android:layout_marginTop="15dp"
-                    android:layout_marginStart="25dp"
-                    android:layout_marginLeft="25dp" />
+                    android:layout_gravity="center_horizontal"
+                     />
 
 
 

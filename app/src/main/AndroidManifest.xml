@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HotelBookingApp">
         <activity
+            android:name=".Screen_NIghteen"
+            android:exported="true" />
+        <activity
             android:name=".ThirteenScreen"
             android:exported="true" />
         <activity
